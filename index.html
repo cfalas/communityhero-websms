@@ -3,6 +3,7 @@
 
 <head>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Community Hero WebSMS</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="style.css" rel="stylesheet">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
@@ -11,6 +12,7 @@
     <body>
         <h1 class="text-center">SMS Chatbot</h1>
         <p class="text-center col-sm-4 col-sm-offset-4">This, even if it doesn't look like it, is in fact an SMS chatbot. We are demoing it as a web chatbot because we don't have a Virtual Private Number yet, and we are using our own private phone numbers, which we wouldn't like to publish. However, the way the chatbot was built, all of the logic is in the backend, and was therefore very easy to make a 1:1 representation in the web. However, we also implemented and tested the code for the SMS gateway, which you can find on <a href='http://github.com/cfalas/communityhero-smsgateway'>github</a></p>
+        <p class="text-center col-sm-4 col-sm-offset-4">In order to use the SMS chatbot, write your 'phone number' in the input field on the top (try to choose a random 8-10 digit number so that chances of someone already using that number are small). Send a message greeting the bot, and the bot will ask you to register. You need to send your address (as stated in the demo instructions, use an address close to Nicosia, Cyprus). When you finish the registration process, you can send orders. Unlike the messenger bot, this one is a bit more strict in terms of syntax. You need the order to be in a single message, one item per line. Since normally this would be over SMS, and not the internet, it would be a lot slower, so we didn't implement so much interaction as with the Messenger Chatbot.</a></p>
         <input type='number' placeholder="Enter Phone Number" class="text-center col-sm-4 col-sm-offset-4" id="phone"/>
         <div class="col-sm-4 col-sm-offset-4 frame" id="outer">
             <ul></ul>
