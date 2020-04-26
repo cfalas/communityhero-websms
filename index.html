@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="style.css" rel="stylesheet">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+    <body>
+        <h1 class="text-center">SMS Chatbot</h1>
+        <p class="text-center col-sm-4 col-sm-offset-4">This, even if it doesn't look like it, is in fact an SMS chatbot. We are demoing it as a web chatbot because we don't have a Virtual Private Number yet, and we are using our own private phone numbers, which we wouldn't like to publish. However, the way the chatbot was built, all of the logic is in the backend, and was therefore very easy to make a 1:1 representation in the web. However, we also implemented and tested the code for the SMS gateway, which you can find on <a href='http://github.com/cfalas/communityhero-smsgateway'>github</a></p>
+        <input type='number' placeholder="Enter Phone Number" class="text-center col-sm-4 col-sm-offset-4" id="phone"/>
+        <div class="col-sm-4 col-sm-offset-4 frame" id="outer">
+            <ul></ul>
+            <div>
+                <div class="msj-rta macro">                        
+                    <div class="text text-r" style="background:whitesmoke !important">
+                        <textarea class="mytext" placeholder="Type a message"></textarea>
+                    </div> 
+
+                </div>
+                <div style="padding:10px;">
+                    <span id='submit' class="glyphicon glyphicon-share-alt"></span>
+                </div>                
+            </div>
+        </div>       
+        <script src='mess.js'></script>
+    </body>
+</html>
